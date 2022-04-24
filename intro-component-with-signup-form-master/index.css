@@ -1,0 +1,159 @@
+
+    
+html {width: 80%;}
+    body {
+        display: grid;
+         grid-template-columns:/*2fr,4fr,2fr,3fr,1fr; */ (7,150px);
+         grid-auto-rows: minmax(100% , auto) ;
+      background-image:url('images/bg-intro-desktop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-color: hsl(0, 100%, 74%) ;
+     
+  
+    }
+      .content{
+          display: grid;
+          align-content: center;
+          color: white;
+          text-align:left;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start:3;
+          grid-row-end: 4;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          
+          padding: 20px;
+      }
+      h1{
+          font-size: 80px;
+          font-weight:600px; 
+        
+      }
+      h4{
+          font-weight: 10px;
+          font-size: 20px;
+      }
+      section{
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          padding: 50px;
+      }
+
+
+   .top{
+        
+          font-size: 5px;
+         /* text-align: center; */
+         background-color: hsl(228, 45%, 44%);
+         color: whitesmoke;
+         /* text-indent: 20px; */
+         /* word-spacing: 5px; */
+         line-height: 5vh;
+         font-size: 16px;
+         font-weight: 400px;
+         border-radius:10px;
+         padding: 10px;
+         margin:10px;
+         border-bottom: 5px;
+         border-top:5px;
+         width: 150%;
+         text-align: center;
+        }
+        strong{
+            font-weight: 600px;
+        }
+        div{
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            /* row-gap: 5px; */
+            justify-content: center;
+           
+        }
+        .formControl{
+            background: white;
+            display: grid;
+            border-radius: 10px;
+            padding: 30px;
+            width: 150%;
+            
+        }
+        input{
+            border-color : 1px solid hsl(246, 25%, 77%) ;
+            height: 50px;
+            border-radius: 5px;
+            margin:0 10px  ;
+            width: 100%;
+            outline: none;
+
+        }
+
+        button{
+             background:  hsl(154, 59%, 51%);
+             color: white;
+             font: 5px;
+             font-weight: 400px;
+             line-height: 5vh;
+             border-radius: 5px;
+             width: 100%;
+        } 
+        b{
+            font-weight: 400px;
+            color: hsl(0, 100%, 74%) ;
+            font-size: 12px;
+        }
+        small{
+            visibility: hidden;
+        }
+        .bold{
+            font-size:10px;
+            font-weight:400px;
+            color: hsl(246, 25%, 77%) ;
+
+        }
+    .attribution {
+         font-size: 11px; text-align: center; 
+         grid-column-start: 5;
+         grid-column-end: 7;
+         grid-row-start: 5;
+         grid-row-end: 6;
+        }
+    .attribution a {
+         color: hsl(228, 45%, 44%);
+         }
+         @media (min-width:375px) and (max-width:1000px) {
+            body{
+                display: grid;
+                background-image:url('images/bg-intro-mobile.png');
+                grid-template-columns :(4,100px);
+                grid-auto-rows: minmax(100%, auto);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-color: hsl(0, 100%, 74%) ;
+            }
+            .content,.container{
+                grid-row: unset;
+                grid-column: unset;
+            }
+              .content{
+                align-content: center;
+                color: white;
+                text-align:left;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+
+              }
+              .container{
+                   grid-column-start: 1;
+                   grid-column-end: 5;
+                   align-content: center;
+                   grid-row-start: 4;
+                   grid-row-end: 5;
+                }
